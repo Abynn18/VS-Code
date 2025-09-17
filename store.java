@@ -36,8 +36,17 @@ public class store {
         }
         input.close();
 
-         
-        }
 
-   
-}
+            // Calculate and display total quantity and stock availability
+            int totalQuantity = 0;
+            for (int product = 0; product < 3; product++) {
+                totalQuantity += totalSales[product];
+            }
+            System.out.println("Total quantity of all products: " + totalQuantity);
+            if (totalQuantity > 0) {
+                System.out.println("Stock is available.");
+            } else {
+                System.out.println("Stock is not available.");
+            }
+        }
+    }
