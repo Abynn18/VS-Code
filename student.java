@@ -23,7 +23,7 @@ public class student {
          for ( i = 0; i < n; i++) {
             System.out.println("Name: " + names[i] + ", Marks: " + marks[i]);
             if (marks[i] < 35) {
-                System.out.print(" --> Needs Improvement");
+                System.out.print(" Needs Improvement");
             }
          
         }
