@@ -9,17 +9,16 @@ public class mark {
     int total=0;
     double average;
     int i;
+    
     for( i=0;i<marks.length;i++){
-            total += marks[i];
-            }
-    for( i=0;i<marks.length;i++){
+         total += marks[i];
             if (marks[i]<35) {
-                System.out.println(marks[i]+" Result : Fail ");
+                System.out.println(i+")"+"mark =" +marks[i]+" Result : Fail ");
                 break;
             }
            
             }
-            total += marks[i];
+            
             average = total / (double)marks.length;
             System.out.println("Total Marks ="+total);
             System.out.println("Average Marks ="+average);
