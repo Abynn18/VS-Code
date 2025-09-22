@@ -46,8 +46,8 @@ public class BookingApp {
              ride = new CarRide();
              break;
              default:
-             System.out.println("Invalid choice, defaulting to Car Ride.");
-             ride = new CarRide();
+             System.out.println("Invalid choice! Please choose either 'Auto' or 'Car'.");
+             return;
             }
             ride.ridetype();
             int fare= ride.calculateFare(km);
